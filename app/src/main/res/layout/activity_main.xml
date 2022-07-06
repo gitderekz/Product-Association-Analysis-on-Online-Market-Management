@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:backgroundTint="@color/darkWhite"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imageVIewAdd"
+                    android:layout_width="200sp"
+                    android:layout_height="200sp"
+                    android:scaleType="fitXY"
+                    android:padding="5sp"
+                    android:src="@drawable/ic_image" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageVIewAdd1"-->
+<!--                    android:layout_width="150sp"-->
+<!--                    android:layout_height="66sp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:padding="5sp"-->
+<!--                    android:src="@drawable/ic_image" />-->
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center"-->
+<!--                >-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageVIewAdd2"-->
+<!--                    android:layout_width="150sp"-->
+<!--                    android:layout_height="66sp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:padding="5sp"-->
+<!--                    android:src="@drawable/ic_image" />-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageVIewAdd3"-->
+<!--                    android:layout_width="150sp"-->
+<!--                    android:layout_height="66sp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:padding="5sp"-->
+<!--                    android:src="@drawable/ic_image" />-->
+
+<!--            </LinearLayout>-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Item's Name..."
+                android:id="@+id/inputImageName"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@color/white"
+                android:layout_margin="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price"
+                >
+                <Spinner
+                    android:id="@+id/item_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:entries="@array/aina_ya_bidhaa"
+                    android:maxHeight="50sp"
+                    android:spinnerMode="dropdown"/>
+            </androidx.cardview.widget.CardView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:id="@+id/mainPrice"
+                android:inputType="number"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:id="@+id/description"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product id"
+                android:id="@+id/item_id"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Count"
+                android:id="@+id/item_count"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProgress"
+                android:background="@color/blueWhite"
+                android:text="0.0 %"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:id="@+id/btnUpload"
+                android:background="@drawable/cart_background"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="2dp"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5sp"
+        android:layout_marginStart="5sp"
+        android:background="@color/colorPrimary"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red05"
+            >
+            <TextView
+                android:id="@+id/transaction_time_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="15sp"
+                android:layout_weight="1"
+                android:text="date"
+                />
+            <TextView
+                android:id="@+id/transaction_items_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="items"
+                />
+            <TextView
+                android:id="@+id/transaction_ids_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ID's"
+                />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

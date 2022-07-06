@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/red05"
+    app:cardCornerRadius="10sp"
+    android:layout_margin="8dp"
+    >
+<!--    android:background="@color/white"-->
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        >
+<!--        <ImageView-->
+<!--            android:layout_width="200sp"-->
+<!--            android:layout_height="200sp"-->
+<!--            android:id="@+id/home_single_view"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:src="@drawable/nikon"-->
+<!--            android:layout_rowSpan="3"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:layout_margin="10sp"-->
+<!--            />-->
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="66sp"
+            android:id="@+id/home_single_view_child_one"
+            android:layout_columnWeight="1"
+            android:src="@drawable/nikon"
+            android:scaleType="centerCrop"
+            android:layout_margin="5sp"
+            />
+<!--        <ImageView-->
+<!--            android:layout_width="150sp"-->
+<!--            android:layout_height="66sp"-->
+<!--            android:id="@+id/home_single_view_child_two"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:src="@drawable/nikon"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:layout_margin="5sp"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:layout_width="150sp"-->
+<!--            android:layout_height="66sp"-->
+<!--            android:id="@+id/home_single_view_child_three"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:src="@drawable/nikon"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:layout_margin="5sp"-->
+<!--            />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeImageName"
+            android:text="Category Name"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:textColor="@color/red03"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+    </GridLayout>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@drawable/image"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:id="@+id/home_single_view"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/homeSingleViewConstraint"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20sp"-->
+<!--        android:layout_below="@+id/home_single_view">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/homeImageName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:gravity="center"-->
+<!--            android:text="My car"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/homePrice"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:gravity="center"-->
+<!--            android:text="...  ...   ...   ...   ..."-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/homeImageName" />-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/homeCartButton"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/ic_baseline_shopping_cart_24"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent" />&ndash;&gt;-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</androidx.cardview.widget.CardView>

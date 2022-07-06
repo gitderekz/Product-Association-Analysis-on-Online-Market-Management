@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:hint="  User Name"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:background="@drawable/round_background_1"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/signup"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:background="@drawable/round_background_1"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:background="@drawable/round_background_1"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPassword"
+        android:hint="  Confirm Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:background="@drawable/round_background_1"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpBtn"
+        android:text="Sign Up"
+        android:backgroundTint="@color/whitesh"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpBtn_withGoogle"
+        android:text="Sign Up With Google"
+        android:backgroundTint="@color/lightblue"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn_withGoogle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Already have an account ?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logIn"
+            android:padding="20sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:text="Login"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

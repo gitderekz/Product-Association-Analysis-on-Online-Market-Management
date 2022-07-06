@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/startHome" android:title="home" android:icon="@drawable/ic_baseline_home_24"/>
+    <item android:id="@+id/favourites" android:title="report" android:icon="@drawable/ic_baseline_event_note_24"/>
+
+<!--    <item android:id="@+id/chats" android:title="chat" android:icon="@drawable/ic_baseline_mode_comment_24"/>-->
+    <item android:id="@+id/cart" android:title="association" android:icon="@drawable/algorithm"/>
+    <item android:id="@+id/settings" android:title="settings" android:icon="@drawable/ic_baseline_settings_applications_24"/>
+
+</menu>

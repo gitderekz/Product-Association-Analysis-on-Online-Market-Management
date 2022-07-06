@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OnCart"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TableLayout
+            android:id="@+id/tableTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:background="@color/colorPrimary"
+            >
+            <TableRow
+                android:background="@color/darkWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2sp"
+                android:layout_marginTop="2sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="DATE"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ITEMS"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ID's"
+                    />
+            </TableRow>
+        </TableLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/OnCartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:layout_marginEnd="2sp"
+            android:layout_marginStart="2sp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tableTitle_association"
+            app:layout_constraintTop_toBottomOf="@+id/tableTitle" />
+        <TableLayout
+            android:id="@+id/tableTitle_association"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/OnCartRecyclerView"
+            app:layout_constraintBottom_toTopOf="@+id/scroll"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="5sp"
+            android:background="@color/colorPrimary"
+            >
+            <TableRow
+                android:background="@color/darkWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2sp"
+                android:layout_marginTop="2sp"
+                >
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="DATE"-->
+<!--                    />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ASSOCIATIONS"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="CONFIDENCE"
+                    />
+            </TableRow>
+        </TableLayout>
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tableTotal"
+            app:layout_constraintTop_toBottomOf="@+id/tableTitle_association">
+            <TableLayout
+                android:id="@+id/associations"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginStart="5sp"
+                android:background="@color/colorPrimary"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red05"
+                    >
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/transaction_time"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:text="date"-->
+                    <!--                    />-->
+                    <TextView
+                        android:id="@+id/frequent_items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="A -> B"
+                        />
+                    <TextView
+                        android:id="@+id/confidence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.00%"
+                        />
+                </TableRow>
+            </TableLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/linear_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="62dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <Button
+                android:id="@+id/generate_data_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="2sp"
+                android:textColor="@color/white"
+                android:text="GENERATE DATASET"
+                android:background="@color/red01"
+                />
+            <Button
+                android:id="@+id/generate_association"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="2sp"
+                android:textColor="@color/white"
+                android:text="GENERATE ASSOCIATIONS"
+                android:background="@color/red01"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

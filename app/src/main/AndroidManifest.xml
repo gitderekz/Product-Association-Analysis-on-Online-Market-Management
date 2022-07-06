@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.maisha_supermarket_management">
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:remove="android:maxSdkVersion"/>
+    <application
+        android:allowBackup="true"
+        android:requestLegacyExternalStorage="true"
+        android:icon="@drawable/shopping_bag"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/shopping_bag"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.maisha_supermarket_management.Login"></activity>
+        <activity android:name="com.example.maisha_supermarket_management.Register" />
+        <activity android:name="com.example.maisha_supermarket_management.Start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.maisha_supermarket_management.Sports" />
+        <activity android:name="com.example.maisha_supermarket_management.Snacks" />
+        <activity android:name="com.example.maisha_supermarket_management.Home" />
+        <activity android:name="com.example.maisha_supermarket_management.Food" />
+        <activity android:name="com.example.maisha_supermarket_management.Drinks" />
+        <activity android:name="com.example.maisha_supermarket_management.Phones" />
+        <activity android:name="com.example.maisha_supermarket_management.ViewActivity" />
+        <activity
+            android:name="com.example.maisha_supermarket_management.HomeActivity"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.example.maisha_supermarket_management.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
